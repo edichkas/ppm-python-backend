@@ -10,7 +10,7 @@ class CreateDB:
         conn = None
         try:
             conn = sqlite3.connect(db_file)
-            print(sqlite3.version)
+            print("Prisijungta prie SQLite ", sqlite3.version)
         except Error as e:
             print(e)
         finally:
